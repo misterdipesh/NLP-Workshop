@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+	<div class="form-group">
+		<form method="POST" action="/predict">
+			<textarea class="form-control" name="message" required></textarea>
+			<button type="submit" class="btn btn-primary center-block">Submit</button>
+		</form>
+	</div>
+{% endblock %}
